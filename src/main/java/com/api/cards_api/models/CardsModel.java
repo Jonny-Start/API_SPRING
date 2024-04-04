@@ -13,7 +13,9 @@ import jakarta.persistence.GenerationType;
 public class CardsModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCard; // 6 digitos
+    private Long idCard; // Auto incremente
+
+    private Long idProduct; // 6 digitos
 
     private Long cardNumber; // 16 digitos
 
@@ -23,7 +25,7 @@ public class CardsModel {
 
     private Date cardExpirationDate; // MM/YY
 
-    private Boolean cardActive; // true - activa, false - inactiva
+    private Boolean cardActive; // true - activa, false - inactiva -- si es NULL (por defecto) significa que no se a creado una tarjeta para ese cliente
 
     private Long cardBalance; // saldo en dolares
 
@@ -39,6 +41,14 @@ public class CardsModel {
 
     public void setIdCard(Long idCard) {
         this.idCard = idCard;
+    }
+
+    public Long getIdProduct() {
+        return idProduct;
+    }
+
+    public void setIdProduct(Long idProduct) {
+        this.idProduct = idProduct;
     }
 
     public Long getCardNumber() {

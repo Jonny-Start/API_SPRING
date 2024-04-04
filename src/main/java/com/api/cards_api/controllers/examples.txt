@@ -1,0 +1,31 @@
+
+    // @GetMapping("/test");
+    // @GetMapping
+    // public ArrayList<CardsModel> getCard() {
+    // return this.cardService.getCard();
+    // }
+
+    // @GetMapping(path = "/{id}")
+    // public Optional<CardsModel> getCardById(@PathVariable("id") Long id) {
+    // return this.cardService.getCardById(id);
+    // }
+
+    // @PostMapping
+    // public CardsModel saveCard(@RequestBody CardsModel card) {
+    // return this.cardService.saveCard(card);
+    // }
+
+    // @PutMapping(path = "/{id}")
+    // public CardsModel updateById(@RequestBody CardsModel request,
+    // @PathVariable("id") Long id) {
+    // return this.cardService.updateById(request, id);
+    // }
+
+    // @DeleteMapping(path = "/{id}")
+    // public String deleteCard(@PathVariable("id") Long id) {
+    // if (this.cardService.deleteCard(id)) {
+    // return "Card deleted";
+    // } else {
+    // return "Card not found";
+    // }
+    // }
